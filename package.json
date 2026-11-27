@@ -1,0 +1,9 @@
+{
+  "name": "clipvault-extension",
+  "version": "1.0.0",
+  "description": "100% local, distraction-free web clipper. Save any article to clean Markdown, Obsidian notes, print-ready PDF & offline HTML.",
+  "scripts": {
+    "test": "bun test"
+  },
+  "private": true
+}

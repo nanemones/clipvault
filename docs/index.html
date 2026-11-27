@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClipVault — Clip Any Web Article to Clean Markdown, Obsidian & PDF</title>
+  <meta name="description" content="100% local, privacy-first browser extension to strip ads and clip any article to Markdown, Obsidian YAML notes, clean print-ready PDF, or offline HTML." />
+  <style>
+    :root { --bg:#0d0b09; --surface:#171411; --border:#2e2720; --text:#fafaf9; --muted:#a8a29e; --accent:#f59e0b; --accent-dark:#d97706; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,sans-serif; background:radial-gradient(circle at top center,#2d1b0c 0%,var(--bg) 48%); color:var(--text); line-height:1.6; }
+    .wrap { max-width:920px; margin:0 auto; padding:48px 20px 80px; }
+    .nav { display:flex; justify-content:space-between; align-items:center; margin-bottom:56px; }
+    .logo { font-weight:800; font-size:20px; color:#fff; text-decoration:none; }
+    .logo span { color:var(--accent); }
+    .hero { text-align:center; max-width:720px; margin:0 auto 52px; }
+    .pill { display:inline-block; padding:5px 12px; border-radius:999px; background:rgba(245,158,11,.15); border:1px solid rgba(245,158,11,.4); color:#fcd34d; font-size:12px; font-weight:600; margin-bottom:18px; }
+    h1 { font-size:clamp(32px,5vw,48px); line-height:1.15; letter-spacing:-.03em; margin-bottom:16px; }
+    .sub { font-size:17px; color:var(--muted); margin-bottom:28px; }
+    .cta-row { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+    .btn { display:inline-block; padding:12px 22px; border-radius:10px; font-weight:700; font-size:15px; text-decoration:none; }
+    .btn-primary { background:var(--accent-dark); color:#fff; border:1px solid var(--accent); }
+    .btn-pro { background:var(--accent); color:#0d0b09; }
+    .btn-outline { background:var(--surface); color:#fff; border:1px solid var(--border); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px; margin:48px 0; }
+    .card { background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:22px; }
+    .card h3 { font-size:16px; margin-bottom:8px; }
+    .card p { font-size:14px; color:var(--muted); }
+    .footer { text-align:center; color:var(--muted); font-size:13px; margin-top:56px; border-top:1px solid var(--border); padding-top:24px; }
+    .footer a { color:var(--accent); text-decoration:none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <a class="logo" href="#">Clip<span>Vault</span></a>
+      <div style="display:flex;gap:16px;">
+        <a href="https://github.com/nanemones/clipvault" style="color:var(--muted);text-decoration:none;font-size:14px;">GitHub</a>
+        <a href="https://nicolastic1642.gumroad.com/l/clipvault-pro" style="color:var(--accent);text-decoration:none;font-size:14px;font-weight:700;">Pro $9.99</a>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="pill">100% Local · Zero Tracking · No Subscription</div>
+      <h1>Clip Any Article to Clean Markdown, Obsidian &amp; PDF</h1>
+      <p class="sub">Strip ads, popups, and sticky navbars automatically. Save clean Markdown, Obsidian YAML notes, print-ready PDFs, or offline HTML archives in 1 click.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://github.com/nanemones/clipvault/releases">Download Free Extension</a>
+        <a class="btn btn-pro" href="https://nicolastic1642.gumroad.com/l/clipvault-pro">Unlock Pro — $9.99 Once</a>
+        <a class="btn btn-outline" href="https://github.com/nanemones/clipvault">View Source</a>
+      </div>
+    </section>
+    <section class="grid">
+      <div class="card">
+        <h3>Obsidian YAML Frontmatter</h3>
+        <p>Automatically captures title, source URL, author, site, reading time, word count, and tags — drop straight into your Obsidian vault.</p>
+      </div>
+      <div class="card">
+        <h3>Distraction-Free Print PDF</h3>
+        <p>Generates a clean serif reading sheet with zero sidebars, zero ads, and crisp code blocks ready to save as PDF.</p>
+      </div>
+      <div class="card">
+        <h3>Code &amp; Links Study Digest</h3>
+        <p>Extracts every fenced code snippet and external reference link from long technical tutorials into one focused cheat sheet.</p>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>Built by <a href="https://github.com/nanemones">nanemones</a> · Local Privacy Suite: <a href="https://nanemones.github.io/chatvault/">ChatVault</a> · <a href="https://nanemones.github.io/tablesnap/">TableSnap</a> · <a href="https://nanemones.github.io/contextpack/">ContextPack</a></p>
+    </footer>
+  </div>
+</body>
+</html>

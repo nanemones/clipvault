@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClipVault</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="brand">
+        <img src="../icons/icon48.png" alt="ClipVault" class="brand-icon" />
+        <div>
+          <h1 class="brand-title">ClipVault</h1>
+          <p class="brand-sub">100% Local Article Clipper</p>
+        </div>
+      </div>
+      <span id="plan-badge" class="badge badge-free">FREE</span>
+    </header>
+
+    <section id="article-card" class="article-card">
+      <div id="article-title" class="article-title">Extracting article...</div>
+      <div id="article-meta" class="article-meta">Scanning active tab</div>
+    </section>
+
+    <section id="preview-box" class="preview-box hidden">
+      <pre id="preview-text" class="preview-text"></pre>
+    </section>
+
+    <main id="actions-wrap" class="hidden">
+      <div class="actions-group">
+        <div class="group-label">Free Exports</div>
+        <div class="btn-grid">
+          <button id="btn-md" class="btn btn-primary" type="button">Download .md</button>
+          <button id="btn-copy-md" class="btn btn-secondary" type="button">Copy Markdown</button>
+          <button id="btn-txt" class="btn btn-secondary" type="button">Download .txt</button>
+          <button id="btn-rescan" class="btn btn-secondary" type="button">Rescan Page</button>
+        </div>
+      </div>
+
+      <div class="actions-group">
+        <div class="group-label">Pro Exports <span class="pro-tag">PRO</span></div>
+        <div class="btn-grid">
+          <button id="btn-obsidian" class="btn btn-pro" type="button">Obsidian Note</button>
+          <button id="btn-pdf" class="btn btn-pro" type="button">Clean Print PDF</button>
+          <button id="btn-html" class="btn btn-secondary" type="button">Offline HTML</button>
+          <button id="btn-digest" class="btn btn-secondary" type="button">Code &amp; Links Digest</button>
+        </div>
+      </div>
+    </main>
+
+    <section id="toast" class="toast hidden"></section>
+
+    <footer id="pro-box" class="pro-box">
+      <div class="pro-header">
+        <strong>Unlock ClipVault Pro — $9.99 once</strong>
+        <a id="buy-link" href="https://nicolastic1642.gumroad.com/l/clipvault-pro" target="_blank" rel="noopener noreferrer" class="btn-upgrade">Get Pro</a>
+      </div>
+      <p class="pro-desc">Obsidian YAML notes, distraction-free Print PDF, offline HTML archives &amp; code/links study digests.</p>
+      <div class="license-row">
+        <input id="license-input" type="text" class="input" placeholder="Paste Gumroad license key..." />
+        <button id="btn-activate" class="btn btn-small" type="button">Activate</button>
+      </div>
+      <p id="license-msg" class="license-msg hidden"></p>
+    </footer>
+
+    <footer id="pro-active-box" class="pro-active-box hidden">
+      <span>ClipVault Pro Active</span>
+      <button id="btn-deactivate" class="btn-link" type="button">Remove Key</button>
+    </footer>
+  </div>
+
+  <script src="formatters.js"></script>
+  <script src="license.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

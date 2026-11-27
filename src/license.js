@@ -1,7 +1,7 @@
 // Zero-backend Gumroad License Key verification for ClipVault Pro ($9.99 one-time).
 
 (function (globalScope) {
-  const GUMROAD_PRODUCT_ID = "REPLACE_WITH_GUMROAD_PRODUCT_ID"
+  const GUMROAD_PRODUCT_ID = "jJJ4cQ9Q43wdEB6QmqpBbw=="
   const GUMROAD_CHECKOUT_URL = "https://nicolastic1642.gumroad.com/l/clipvault-pro"
   const STORAGE_KEY = "clipvault_pro_license"
 
